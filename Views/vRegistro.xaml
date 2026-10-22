@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jcajamarcaS3.Views.vRegistro"
+             Title="vRegistro">
+    <VerticalStackLayout
+        Padding="15"
+        Spacing="15">
+
+        <Label 
+            Text="REGISTRO DE USUSARIO"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Entry x:Name="txtUsuarioNuevo"
+               Placeholder="Ingresa el nuevo usuario"/>
+        <Entry x:Name="txtContrasena"
+               Placeholder="Ingresa la contraseña"/>
+
+        <Grid ColumnSpacing="15">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+        <Button x:Name="btnGuardarUsuario"
+                Text="Guardar Usuario"
+                Clicked="btnGuardarUsuario_Clicked"
+                Grid.Row="0"
+                Grid.Column="0"
+                />
+        <Button x:Name="btnCancelar"
+                Text="Cancelar"
+                Clicked="btnCancelar_Clicked"
+                Grid.Row="0"
+                Grid.Column="1"/>
+
+    </VerticalStackLayout>
+</ContentPage>

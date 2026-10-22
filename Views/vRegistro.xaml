@@ -3,6 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jcajamarcaS3.Views.vRegistro"
              Title="vRegistro">
+
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="Maroon"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="BackgroundColor" Value="Aqua"/>
+        </Style>
+            
+    </ContentPage.Resources>
+    
     <VerticalStackLayout
         Padding="15"
         Spacing="15">

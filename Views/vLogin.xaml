@@ -3,9 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="jcajamarcaS3.Views.vLogin"
              Title="vLogin">
+    
+    <ContentPage.Resources>
+        
+        <Style x:Key="styleLabel" TargetType="Label">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="BackgroundColor" Value="DarkCyan"/>
+            <Setter Property="TextColor" Value="Blue"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="styleEntry" TargetType="Entry">
+            <Setter Property="Background" Value="WhiteSmoke"/>
+            <Setter Property="TextColor" Value="Blue"/> 
+            <Setter Property="FontSize" Value="16"/>            
+        </Style>
+        
+    </ContentPage.Resources>
+    
+    
     <VerticalStackLayout
         Padding="20"
-        Spacing="15">
+        Spacing="15"
+        BackgroundColor="Wheat"> 
         <Label 
             Text="INICIO DE SESIÓN"
             FontSize="20"            
@@ -40,7 +60,7 @@
             </Grid.ColumnDefinitions>
 
             <Label Text="Usuario: "
-                   FontSize="18"
+                   Style="{StaticResource styleLabel}"                   
                    Grid.Row="0"
                    Grid.Column="0"/>            
             <Entry x:Name="txtUsuario"
@@ -53,12 +73,14 @@
                    Grid.Row="1"
                    Grid.Column="0"/>            
             <Entry x:Name="txtContrasena"
+                   
                    Placeholder="Ingresa la contraseña"
                    IsPassword="True"
                    Grid.Row="1"
                    Grid.Column="1"/>
 
             <Button x:Name="btnIniciarSesion"
+                    Style="{StaticResource BotonGlobal}"
                     Text="Iniciar sesión"
                     Clicked="btnIniciarSesion_Clicked"
                     Grid.Row="2"

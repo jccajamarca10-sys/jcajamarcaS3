@@ -7,6 +7,7 @@
         <Style x:Key="BotonGlobal" TargetType="Button">
             <Setter Property="BackgroundColor" Value="Bisque"/>
             <Setter Property="TextColor" Value="Blue"/>
+            <Setter Property="FontSize" Value="18"/>
         </Style>
         
         <!--<ResourceDictionary>                       
